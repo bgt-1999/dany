@@ -21,7 +21,7 @@
 
     $html .= "
     <form method = 'GET' action = 'amopa02_2.php?nb=" . $cpt ."'>
-    <table>";
+    <table border width=100%>";
 
     while($data = $reponse->fetch())
     {
@@ -31,10 +31,13 @@
     }
 
     $html .= "</table>
+    <input type=hidden name=nbligne value=".$nblignes.">
     <input type = 'submit' Name = 'Valider' value='Ecrire'>
     </form>
     </body>
     </html>";
+
+    echo $html;
 
     //coucou toi avec ta tête!!
 
