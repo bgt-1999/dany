@@ -1,22 +1,17 @@
 <?php
-    $html =<<<HTML
+    $html ="
 
     <!DOCTYPE html>
     <html>
         <head>
-            <meta charset="UTF-8">
+            <meta charset='UTF-8'>
             <title></title>
         </head>
-        <body>
-HTML
+        <body>"
 ;
 
     $bdd = new PDO('mysql:host=localhost;dbname=amopa;charset=utf8','root','');
-    $reponse = $bdd->prepare('SELECT Nom,
-                                    Prenom,
-                                    Telephone,
-                                    Email 
-                                    FROM amo02_annuaire');
+    $reponse = $bdd->prepare('SELECT Nom, Prenom, Telephone, Email FROM amo02_annuaire');
 
     $reponse->execute();
     $nbLignes = $reponse->rowCount();
