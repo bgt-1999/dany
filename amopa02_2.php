@@ -38,7 +38,7 @@
 
     	for ($count=0;$count<$_GET['nbligne'];$count++)
     	{
-    		$controle="check".$count;
+    		$controle= $_GET['check'.$count];
     		echo $controle."<br>";
     		$destinataire = $controle; // $controle vaut check suivi du numero de la ligne
 
