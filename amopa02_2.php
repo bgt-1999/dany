@@ -40,7 +40,7 @@
     	{
     		$controle="check".$count;
     		echo $controle."<br>";
-    		$destinataire = $_GET['$check0'] ; // $controle vaut check suivi du numero de la ligne
+    		$destinataire = $controle; // $controle vaut check suivi du numero de la ligne
 
     		if (isset($destinataire)) // la case est-elle cochée ?
     		{
