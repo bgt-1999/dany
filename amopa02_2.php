@@ -23,7 +23,7 @@
     		ini_set( 'display_errors', 1 ); 
     		error_reporting( E_ALL );
 
-    		$from = "contact@amopa02.fr"
+    		$from = "contact@amopa02.fr";
 
     		$subject = "un mail de test du site AMOPA"; 
 
@@ -40,7 +40,7 @@
     	{
     		$controle="check".$count;
     		echo $controle."<br>";
-    		$destinataire = $_GET[$controle] ; // $controle vaut check suivi du numero de la ligne
+    		$destinataire = $_GET['$controle'] ; // $controle vaut check suivi du numero de la ligne
 
     		if (isset($destinataire)) // la case est-elle cochée ?
     		{
