@@ -21,6 +21,9 @@ HTML
     $reponse->execute();
     $nbLignes = $reponse->rowCount();
 
+    $nom_case="";
+    $cpt=0;
+
     $html .= "
     <form method = 'GET' action = 'amopa02_2.php?nb=" . $cpt ."'>
     <table>";
