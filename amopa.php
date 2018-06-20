@@ -14,12 +14,12 @@
     $reponse = $bdd->prepare('SELECT Nom, Prenom, Telephone, Email FROM amo02_annuaire');
 
     $reponse->execute();
-    $nbLignes = $reponse->rowCount();
+    $nblignes = $reponse->rowCount();
 
     $nom_case="";
     $cpt=0;
 
-    $html .= "
+    $html .= " " . nblignes . "<br>
     <form method = 'GET' action = 'amopa02_2.php?nb=" . $cpt ."'>
     <table border width=100%>";
 
