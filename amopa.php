@@ -19,7 +19,7 @@
     $nom_case="";
     $cpt=0;
 
-    $html .= " " . nblignes . "<br>
+    $html .= "
     <form method = 'GET' action = 'amopa02_2.php?nb=" . $cpt ."'>
     <table border width=100%>";
 
