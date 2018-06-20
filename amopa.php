@@ -28,10 +28,10 @@ HTML
     <form method = 'GET' action = 'amopa02_2.php?nb=" . $cpt ."'>
     <table>";
 
-    for($i = 0; $i < $nbLignes; $i++)
+    while($data = $reponse->fetch())
     {
         $nom_case = "check".$cpt;
-        $html .= "<tr><td>" . $reponse['Nom'] . "</td><td>" . $reponse['Prenom'] . "</td><td>" . $reponse['Email'] . '</td><td> <input type="checkbox" name='.$nom_case.'  value="'.$reponse['Email'].'"  />'.$data['Email'].'<br /> </td> </tr>';
+        $html .= "<tr><td>" . $data['Nom'] . "</td><td>" . $data['Prenom'] . "</td><td>" . $data['Email'] . '</td><td> <input type="checkbox" name='.$nom_case.'  value="'.$data['Email'].'"  />'.$data['Email'].'<br /> </td> </tr>';
         $cpt = $cpt + 1;
     }
 
