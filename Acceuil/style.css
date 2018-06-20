@@ -1,0 +1,22 @@
+body
+{
+        background-color: #f3dbff;
+        color: black;
+}
+
+.tableau
+{
+    font-family: Arial, sans-serif;
+    font-style: italic;
+}
+
+.images { 
+height: auto; 
+width: auto; 
+} 
+
+.small
+{
+    height: 50%;
+    width: 50%;
+}
