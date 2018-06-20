@@ -48,6 +48,8 @@
     			$liste_destinataires.= ',' ;
     			$liste_destinataires .= $destinataire ;      
     		}
+
+            $destinataire = null;
     	}
 
     	// la liste des mails est constituée, on l'envoie
