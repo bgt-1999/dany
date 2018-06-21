@@ -1,7 +1,7 @@
 <?php
     try
     {
-        $base = new PDO('mysql:host=localhost;dbname=amopa;charset=utf8','root','');
+        $base = new PDO('mysql:host=amopafrqmdamopa.mysql.db;dbname=amopafrqmdamopa;charset=utf8', 'amopafrqmdamopa', 'Amopa02000');
                 
          $base ->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     }
