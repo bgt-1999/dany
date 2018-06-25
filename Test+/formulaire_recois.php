@@ -10,11 +10,12 @@
         die('Erreur '.$e->getMessage());
     }
             
-    $insert = $base->prepare("INSERT INTO amo02_annuaire (Nom, Prenom, Telephone, Email) VALUES(:nom,:prenom,:telephone,:email)");
+    $insert = $base->prepare("INSERT INTO amo02_annuaire (Nom, Prenom, Fonction, Telephone, Email) VALUES(:nom,:prenom,:fonction,:telephone,:email)");
                 
     $tab = array(
         ":nom" => $_POST["nom"],
         ":prenom" => $_POST["prenom"],
+        ":fonction" => $_POST["fonction"],
         ":telephone" => $_POST['telephone'],
         ":email" => $_POST["email"]
         );
